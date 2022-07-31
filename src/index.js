@@ -12,15 +12,15 @@ const root = ReactDOM.createRoot(document.getElementById('root'))
 
 root.render( 
 	<React.StrictMode>
-		<div className='container'>
-			<Card className='base'>
-				<Title className='name' text='Giovanni' />
-				<Card className='main'>
-					{'test'}
-					<Badge icon={<StarOutlined/>}>{'badge'}</Badge>
+		<Card className='base'>
+			<Title className='name' text='Giovanni' />
+			<Card className='main'>
+				<Badge icon={<StarOutlined/>}>{'badge'}</Badge>
+				<Card className = 'secondary' title = 'Education' > 
+					{'test'} 
 				</Card>
 			</Card>
-		</div>
+		</Card>
 	</React.StrictMode>
 )
 
