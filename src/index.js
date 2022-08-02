@@ -3,17 +3,24 @@ import ReactDOM from 'react-dom/client'
 import { StarOutlined } from '@ant-design/icons'
 
 import reportWebVitals from './reportWebVitals'
-import './index.css'
+
+import Avatar from './components/avatar'
 import Card from './components/card'
 import Badge from './components/badge'
 import Title from './components/title'
+
+import './index.css'
 
 const root = ReactDOM.createRoot(document.getElementById('root'))
 
 root.render( 
 	<React.StrictMode>
 		<Card className='base'>
-			<Title className='name' text='Giovanni' />
+			<Avatar />
+			<div className='details'>
+				<Title className='name' text='Giovanni Tommasi' />
+				<span className = 'job' >{'Software Engineer'}</span>
+			</div>
 			<Card className='main'>
 				<Badge icon={<StarOutlined/>}>{'badge'}</Badge>
 				<Card className = 'secondary' title = 'Education' > 
