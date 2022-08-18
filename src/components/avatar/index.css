@@ -5,8 +5,10 @@
     justify-content: center;
 
     position: absolute;
-    top: 1em;
+    top: 1.5em;
     left: 2em;
+
+    overflow: hidden;
 
     z-index: 10;
 

@@ -10,8 +10,30 @@
 
     position: relative;
     box-sizing: border-box;
+
+    overflow: hidden;
 }
 
-.card-title {
-    align-self: start;
+.card-header {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: space-between;
+
+    width: 100%;
+}
+
+.card-extra {
+    font-family: monospace;
+    font-weight: 300;
+}
+
+.card-background > img {
+    position: absolute;
+    top: -2.5rem;
+    right: -2rem;
+
+    height: 15rem;
+
+    opacity: 0.05;
 }

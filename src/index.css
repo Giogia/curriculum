@@ -25,32 +25,13 @@ code {
 }
 
 .base {
-  height: 1200px;
-  width: 800px;
+  height: 1299.21px;
+  width: 1003.94px;
   justify-content: flex-end !important;
   padding: 0.25rem;
   
   background-color: black;
   box-shadow: rgba(50, 50, 93, 0.45) 0px 30px 60px -12px, rgba(0, 0, 0, 0.5) 0px 18px 36px -18px;
-}
-
-.base .details {
-  display: flex;
-  flex-direction: column;
-  gap: 4px;
-
-  align-self: flex-start;
-  padding-left: 20%;
-}
-
-.base .details .name {
-    color: white !important;
-}
-
-.base .details .job {
-    color: white !important;
-    font-size: medium;
-    padding-left: 5px;
 }
 
 .main {
@@ -62,20 +43,11 @@ code {
   background-color:whitesmoke;
 }
 
-.main .contacts {
-  display: flex;
-  flex-direction: row;
-  gap: 4px;
-
-  align-self: flex-start;
-  padding-left: 20%;
-}
-
 .secondary {
   width: 100%;
 
   margin: 0;
-  padding: 1rem;
+  padding: 1rem 0.5rem 0.5rem 0.5rem;
 
   background-color: rgba(189, 200, 234, 0.25);
   box-shadow: rgba(99, 99, 99, 0.1) 0px 2px 8px 0px;  
@@ -86,7 +58,7 @@ code {
   width: 100%;
 
   margin: 0;
-  padding: 0.75rem;
+  padding: 0.5rem;
 
   background-color: rgba(145, 173, 255, 0.25);
   box-shadow: rgba(99, 99, 99, 0.1) 0px 2px 8px 0px;  

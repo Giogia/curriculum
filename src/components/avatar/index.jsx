@@ -7,20 +7,22 @@ import './index.css'
 
 const px = (number) => `${number}px`
 
-const Avatar = ({ className, size = 128 }) => (
+const Avatar = ({ className, icon, size = 128 }) => (
 	<div className={classNames(className, 'avatar')}
 		style={{
 			height: px(size),
 			width: px(size)
 		}}>
-		<UserOutlined style={{
-			fontSize: size/2
-		}} />
+		{icon ?
+			<img src={icon} alt="logo" style={{	width: size }} /> :
+			<UserOutlined style={{ fontSize: size / 2 }} />
+		}
 	</div>
 )
 
 Avatar.propTypes = {
 	className: PropTypes.string,
+	icon: PropTypes.node,
 	size: PropTypes.string,
 }
 

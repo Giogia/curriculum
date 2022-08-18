@@ -5,17 +5,29 @@ import classNames from 'classnames'
 import Title from '../title'
 import './index.css'
 
-const Card = ({ children, className, title }) => (
+const Card = ({ children, className, title, extra }) => (
 	<div className={classNames(className, 'card')}>
-		<Title className='card-title' text={title}/>
+		<div className='card-header'>
+			<Title className='card-title' text={title?.text} icon={title?.icon} />
+			<div className='card-extra'>
+				{extra}
+			</div>
+		</div>
 		{children}
+		{/* <div className='card-background'>
+			{title?.icon}
+		</div> */}
 	</div>
 )
 
 Card.propTypes = {
 	children: PropTypes.node,
 	className: PropTypes.string,
-	title: PropTypes.node
+	title: PropTypes.shape({
+		text: PropTypes.string,
+		icon: PropTypes.node
+	}),
+	extra: PropTypes.node
 }
 
 export default Card

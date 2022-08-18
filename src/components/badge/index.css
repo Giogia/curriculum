@@ -4,12 +4,12 @@
     align-items: center;
     justify-content: center;
 
-    gap: 8px;
+    gap: 12px;
 
     border-radius: 50vh;
     padding: 5px 10px;
 
-    font-size: x-small;
+    font-size: small;
 
     background-color: rgb(241, 237, 233);
 }

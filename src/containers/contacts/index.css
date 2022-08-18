@@ -1,0 +1,8 @@
+.contacts {
+  display: flex;
+  flex-direction: row;
+  gap: 12px;
+
+  align-self: flex-start;
+  padding-left: 16%;
+}

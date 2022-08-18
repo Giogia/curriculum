@@ -1,4 +1,12 @@
 .title {
+    display: flex;
+    gap: 8px;
+
     font-size: x-large;
-    color: black
+    font-weight: 500;
+    color: black;
+}
+
+.title-icon > img{
+    width: 24px;
 }
