@@ -1,0 +1,9 @@
+.timeline {
+    margin-top: 0.5rem !important;
+
+    width: 100%;
+} 
+
+.timeline .ant-timeline-item-last {
+    padding-bottom: 0 !important;
+}

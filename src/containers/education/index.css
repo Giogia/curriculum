@@ -1,3 +1,16 @@
+.education {
+  height: fit-content;
+  width: 100%;
+
+  margin: 0;
+  padding: 0.5rem;
+
+  align-items: flex-start;
+
+  background-color: rgba(170, 175, 189, 0.25);
+  box-shadow: rgba(99, 99, 99, 0.1) 0px 2px 8px 0px;  
+}
+
 .details {
   display: flex;
   flex-direction: column;

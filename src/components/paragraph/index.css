@@ -1,0 +1,11 @@
+.paragraph {
+    display: flex;
+    flex-direction: row;
+
+    gap: 16px;
+
+    width: 100%;
+
+    align-items: baseline;
+    justify-content: space-between;
+}

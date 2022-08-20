@@ -7,11 +7,13 @@ import Contacts from './containers/contacts'
 import Details from './containers/details'
 import Education from './containers/education'
 import Experience from './containers/experience'
+import Research from './containers/research'
 
 import Avatar from './components/avatar'
 import Card from './components/card'
 
 import './index.css'
+import 'antd/dist/antd.css'
 
 const root = ReactDOM.createRoot(document.getElementById('root'))
 
@@ -24,6 +26,7 @@ root.render(
 				<Contacts />
 				<Experience />
 				<Education />
+				<Research />
 			</Card>
 		</Card>
 	</React.StrictMode>

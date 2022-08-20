@@ -5,10 +5,15 @@ import classNames from 'classnames'
 import Title from '../title'
 import './index.css'
 
-const Card = ({ children, className, title, extra }) => (
+const Card = ({ children, className, title, subtitle, extra }) => (
 	<div className={classNames(className, 'card')}>
 		<div className='card-header'>
-			<Title className='card-title' text={title?.text} icon={title?.icon} />
+			<Title
+				className='card-title'
+				text={title?.text}
+				icon={title?.icon}
+				description={subtitle}
+			/>
 			<div className='card-extra'>
 				{extra}
 			</div>
@@ -27,6 +32,7 @@ Card.propTypes = {
 		text: PropTypes.string,
 		icon: PropTypes.node
 	}),
+	subtitle: PropTypes.node,
 	extra: PropTypes.node
 }
 

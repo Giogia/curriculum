@@ -24,7 +24,10 @@
 }
 
 .card-extra {
+    min-width: fit-content;
+    
     font-family: monospace;
+    font-size: small;
     font-weight: 300;
 }
 

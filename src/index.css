@@ -47,19 +47,8 @@ code {
   width: 100%;
 
   margin: 0;
-  padding: 1rem 0.5rem 0.5rem 0.5rem;
+  padding: 0.5rem 0.5rem 0.5rem 0.75rem;
 
   background-color: rgba(189, 200, 234, 0.25);
-  box-shadow: rgba(99, 99, 99, 0.1) 0px 2px 8px 0px;  
-}
-
-.tertiary {
-  height: 10rem;
-  width: 100%;
-
-  margin: 0;
-  padding: 0.5rem;
-
-  background-color: rgba(145, 173, 255, 0.25);
   box-shadow: rgba(99, 99, 99, 0.1) 0px 2px 8px 0px;  
 }
