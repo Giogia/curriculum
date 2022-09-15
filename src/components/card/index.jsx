@@ -18,7 +18,9 @@ const Card = ({ children, className, title, subtitle, extra }) => (
 				{extra}
 			</div>
 		</div>
-		{children}
+		<div className='card-content'>
+			{children}
+		</div>
 		{/* <div className='card-background'>
 			{title?.icon}
 		</div> */}

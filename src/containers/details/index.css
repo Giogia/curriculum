@@ -3,8 +3,11 @@
   flex-direction: column;
   gap: 4px;
 
+  justify-content: center;
   align-self: flex-start;
   padding-left: 16.5%;
+
+  height: 7%;
 }
 
 .details .name {

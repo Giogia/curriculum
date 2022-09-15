@@ -7,6 +7,19 @@
 
   align-items: flex-start;
 
-  background-color: rgba(255, 255, 255, 0.25);
+  /* background-color: rgba(255, 255, 255, 0.25); */
   box-shadow: rgba(99, 99, 99, 0.1) 0px 2px 8px 0px;  
 } 
+
+.test-transparent {
+  width: 100%;
+}
+
+.test-transparent .card-content {
+  background-color: rgba(145, 145, 145, 0.25);
+  box-shadow: rgba(99, 99, 99, 0.1) 0px 2px 8px 0px;  
+}
+
+.test-transparent .card-header {
+  align-items: flex-end;
+}

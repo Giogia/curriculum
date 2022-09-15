@@ -8,7 +8,7 @@ import './index.css'
 
 const Research = () => (
 	<Card className='secondary' title={{ text: 'Research' }} >
-		<div style={{ display: 'flex', gap: '8px', width: '100%' }}>
+		<div style={{ display: 'flex', gap: '8px', width: '100%'}}>
 			<Card
 				className='research'
 				title={{
@@ -23,9 +23,33 @@ const Research = () => (
 				className='research'
 				title={{
 					text: 'Abbot',
-					icon: <img src={Abbot} alt='prototyping' style={{filter: 'invert(1)'}}/>
+					icon: <img src={Abbot} alt='prototyping' style={{ filter: 'invert(1)' }} />
 				}}
 				subtitle='Acceptance paper for AVI 2018 International Conference on Advanced Visual Interfaces'
+				extra='Sept 2017'
+			>
+				{'test'}
+			</Card>
+		</div>
+		<div style={{ display: 'flex', gap: '8px', width: '100%' }}>
+			<Card
+				className='test-transparent'
+				title={{
+					text: 'test-transparent',
+					icon: <img src={Abbot} alt='prototyping' style={{ filter: 'invert(1)' }} />
+				}}
+				// subtitle='Acceptance paper for AVI 2018 International Conference on Advanced Visual Interfaces'
+				extra='Sept 2017'
+			>
+				{'test'}
+			</Card>
+			<Card
+				className='test-transparent'
+				title={{
+					text: 'test-transparent',
+					icon: <img src={Abbot} alt='prototyping' style={{ filter: 'invert(1)' }} />
+				}}
+				// subtitle='Acceptance paper for AVI 2018 International Conference on Advanced Visual Interfaces'
 				extra='Sept 2017'
 			>
 				{'test'}
