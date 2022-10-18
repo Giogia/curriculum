@@ -25,8 +25,8 @@ root.render(
 			<Card className='main'>
 				<Contacts />
 				<Experience />
-				<Education />
 				<Research />
+				<Education />
 			</Card>
 		</Card>
 	</React.StrictMode>

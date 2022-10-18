@@ -11,5 +11,8 @@
 
     font-size: small;
 
+    height: fit-content;
+    width: fit-content;
+
     background-color: rgb(241, 237, 233);
 }

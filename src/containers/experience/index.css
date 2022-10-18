@@ -1,11 +1,5 @@
 .experience {
-  height: 100%;
-  width: 100%;
-
-  margin: 0;
   padding: 0.75rem;
-
-  align-items: flex-start;
 
   /* background-color: rgba(145, 173, 255, 0.25); */
   box-shadow: rgba(99, 99, 99, 0.1) 0px 2px 8px 0px;  

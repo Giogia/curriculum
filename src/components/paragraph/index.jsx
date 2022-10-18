@@ -6,8 +6,12 @@ import './index.css'
 
 const Paragraph = ({ title, content, className }) => (
 	<div className={classNames(className, 'paragraph')}>
-		{title}
-		{content}
+		<div className='paragraph-title'>
+			{title}
+		</div>
+		<div className='paragraph-content'>
+			{content}
+		</div>
 	</div>
 )
 

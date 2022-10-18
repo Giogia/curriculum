@@ -5,11 +5,12 @@ import classNames from 'classnames'
 import Title from '../title'
 import './index.css'
 
-const Card = ({ children, className, title, subtitle, extra }) => (
+const Card = ({ children, className, title, subtitle, extra, horizontal = false }) => (
 	<div className={classNames(className, 'card')}>
 		<div className='card-header'>
 			<Title
 				className='card-title'
+				badge={title?.badge}
 				text={title?.text}
 				icon={title?.icon}
 				description={subtitle}
@@ -18,7 +19,7 @@ const Card = ({ children, className, title, subtitle, extra }) => (
 				{extra}
 			</div>
 		</div>
-		<div className='card-content'>
+		<div className='card-content' style={{flexDirection: horizontal ? 'row': 'column'}}>
 			{children}
 		</div>
 		{/* <div className='card-background'>
@@ -30,7 +31,9 @@ const Card = ({ children, className, title, subtitle, extra }) => (
 Card.propTypes = {
 	children: PropTypes.node,
 	className: PropTypes.string,
+	horizontal: PropTypes.bool,
 	title: PropTypes.shape({
+		badge: PropTypes.node,
 		text: PropTypes.string,
 		icon: PropTypes.node
 	}),

@@ -1,14 +1,12 @@
 .education {
-  height: fit-content;
-  width: 100%;
-
-  margin: 0;
   padding: 0.75rem;
-
-  align-items: flex-start;
 
   /* background-color: rgba(170, 175, 189, 0.25); */
   box-shadow: rgba(99, 99, 99, 0.1) 0px 2px 8px 0px;  
+}
+
+.education .badge {
+  background-color: rgba(220, 234, 240, 0.4);
 }
 
 .details {

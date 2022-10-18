@@ -10,8 +10,8 @@ li.timeline-item {
     padding-left: 20px;
     margin-left: 10px;
 
-    background:linear-gradient(rgb(200, 197, 194), rgb(200, 197, 194)) left no-repeat;
-    background-size:2px 50%;
+    background:linear-gradient(rgba(200, 197, 194, 0.75), rgba(200, 197, 194, 0.5)) left no-repeat;
+    background-size:2px 70%;
 }
 
 li.timeline-item:last-child{

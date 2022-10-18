@@ -1,6 +1,7 @@
 import React from 'react'
 
 import Card from '../../components/card'
+import Badge from '../../components/badge'
 import Paragraph from '../../components/paragraph'
 import Timeline from '../../components/timeline'
 import Title from '../../components/title'
@@ -11,17 +12,17 @@ import JiaoTong from '../../assets/JiaoTong.png'
 import './index.css'
 
 const Education = () => (
-	<Card className='secondary' title={{ text: 'Education' }} >
+	<Card className='secondary' title={{ text: 'Education' }} horizontal >
 		<Card
 			className='education'
 			title={{
-				text: 'Politecnico',
+				text: 'Politecnico of Milan',
 				icon: <img src={Politecnico} alt='university' />
 			}}
 			subtitle='Computer and Science Engineering'
 			extra='2014 - 2020'
 		>
-			<Timeline color='rgba(189, 200, 234, 0.25)'>
+			<Timeline>
 				<Paragraph
 					title={
 						<Title
@@ -31,9 +32,8 @@ const Education = () => (
 						/>
 					}
 					content={
-						<div>
-							<b>{'Skills: '}</b>
-						</div>
+						<Badge>{'109/110'}</Badge>
+
 					}
 				/>
 				<Paragraph
@@ -45,9 +45,7 @@ const Education = () => (
 						/>
 					}
 					content={
-						<div>
-							<b>{'Skills: '}</b>
-						</div>
+						<Badge>{'99/110'}</Badge>
 					}
 				/>
 			</Timeline>
@@ -61,7 +59,7 @@ const Education = () => (
 			subtitle='Digital Media and Data Reconstruction Laboratory'
 			extra='2018 - 2019'
 		>
-			<Timeline color='rgba(189, 200, 234, 0.25)'>
+			<Timeline>
 				<Paragraph
 					title={
 						<Title

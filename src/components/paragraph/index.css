@@ -9,3 +9,7 @@
     align-items: baseline;
     justify-content: space-between;
 }
+
+.paragraph-content {
+    width: 70%;
+}

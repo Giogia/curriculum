@@ -4,19 +4,21 @@ import classNames from 'classnames'
 
 import './index.css'
 
-const Title = ({ text, icon, description, className, size }) => (
+const Title = ({ text, icon, badge, description, className, size }) => (
 	<div>
-		<div className={classNames(className, 'title')} style={{fontSize: size}}>
+		<div className={classNames(className, 'title')} style={{ fontSize: size }}>
 			{text}
 			<div className='title-icon'>
 				{icon}
 			</div>
+			{badge}
 		</div>
 		{description}
 	</div>
 )
 
 Title.propTypes = {
+	badge: PropTypes.node,
 	text: PropTypes.string,
 	description: PropTypes.string,
 	icon: PropTypes.node,
