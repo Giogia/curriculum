@@ -12,9 +12,35 @@ import JiaoTong from '../../assets/JiaoTong.png'
 import './index.css'
 
 const Education = () => (
-	<Card className='secondary' title={{ text: 'Education' }} horizontal >
+	<Card className='primary education' title={{ text: 'Education' }} style={{ width: '65%' }}>
 		<Card
-			className='education'
+			className='secondary'
+			title={{
+				text: 'Shanghai JiaoTong University',
+				icon: <img src={JiaoTong} alt='university' />
+			}}
+			subtitle='Digital Media and Data Reconstruction Laboratory'
+			extra='2018 - 2019'
+		>
+			<Timeline>
+				<Paragraph
+					title={
+						<Title
+							text={'Researcher'}
+							description={'Sept 2018 - Jul 2019'}
+							size={'medium'}
+						/>
+					}
+					content={
+						<div>
+							<b>{'Skills: '}</b>
+						</div>
+					}
+				/>
+			</Timeline>
+		</Card>
+		<Card
+			className='secondary'
 			title={{
 				text: 'Politecnico of Milan',
 				icon: <img src={Politecnico} alt='university' />
@@ -46,32 +72,6 @@ const Education = () => (
 					}
 					content={
 						<Badge>{'99/110'}</Badge>
-					}
-				/>
-			</Timeline>
-		</Card>
-		<Card
-			className='education'
-			title={{
-				text: 'Shanghai JiaoTong University',
-				icon: <img src={JiaoTong} alt='university' />
-			}}
-			subtitle='Digital Media and Data Reconstruction Laboratory'
-			extra='2018 - 2019'
-		>
-			<Timeline>
-				<Paragraph
-					title={
-						<Title
-							text={'Researcher'}
-							description={'Sept 2018 - Jul 2019'}
-							size={'medium'}
-						/>
-					}
-					content={
-						<div>
-							<b>{'Skills: '}</b>
-						</div>
 					}
 				/>
 			</Timeline>

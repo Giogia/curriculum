@@ -28,14 +28,25 @@ code {
 
 .base {
   display: flex;
-  flex-direction: column; 
+  flex-direction: column;
   height: 1299.21px;
   width: 1003.94px;
   justify-content: flex-start;
   padding: 0.25rem;
-  
+
   background-color: black;
   box-shadow: rgba(50, 50, 93, 0.45) 0px 30px 60px -12px, rgba(0, 0, 0, 0.5) 0px 18px 36px -18px;
+
+  animation: unset;
+}
+
+.base:hover {
+  animation: unset;
+  transform: unset;
+}
+
+.base .card-content {
+  gap: 0;
 }
 
 .main {
@@ -43,13 +54,72 @@ code {
 
   padding: 0.5rem;
 
-  background-color:white;
+  background-color: white;
+
+  animation: unset;
 }
 
-.secondary {
+.main .card-content {
+  gap: 8px;
+}
+
+.main:hover {
+  animation: unset;
+  transform: unset;
+}
+
+.primary {
   margin: 0;
   padding: 0.5rem 0.5rem 0.5rem 0.75rem;
 
   /* background-color: rgba(189, 200, 234, 0.25); */
   /* box-shadow: rgba(99, 99, 99, 0.1) 0px 2px 8px 0px;   */
+
+  animation: unset;
+}
+
+.primary .card-title {
+  padding-left: 8px;
+}
+
+.primary:hover {
+  animation: unset;
+  transform: unset;
+}
+
+.secondary {
+  padding: 0.75rem;
+
+  /* background-color: rgba(170, 175, 189, 0.25); */
+  box-shadow: rgba(99, 99, 99, 0.1) 0px 2px 8px 0px;
+}
+
+.secondary .card-title {
+  padding-left: 0;
+}
+
+.tertiary .card-title .title-text {
+  font-size: large;
+  padding-left: 8px;
+}
+
+.tertiary .card-content {
+  padding: 8px;
+  background-color: rgba(230, 230, 230, 0.25);
+  box-shadow: rgba(99, 99, 99, 0.1) 0px 2px 8px 0px;
+}
+
+.tertiary .card-header {
+  align-items: flex-end;
+}
+
+.tertiary .badge {
+  background: rgba(195, 219, 195, 0.25);
+
+  font-size: x-small;
+  font-weight: 400;
+}
+
+.tertiary .card-background {
+  display: none;
 }

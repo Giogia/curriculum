@@ -16,9 +16,9 @@ import HashCode from '../../assets/Hashcode.png'
 import './index.css'
 
 const Experience = () => (
-	<Card className='secondary' title={{ text: 'Experience' }} >
+	<Card className='primary experience' title={{ text: 'Experience' }} >
 		<Card
-			className='experience'
+			className='secondary'
 			title={{
 				text: 'Mia Platform',
 				icon: <img src={MiaPlatform} key='work' alt='work' />,
@@ -81,12 +81,12 @@ const Experience = () => (
 					}
 				/>
 			</Timeline>
-			<img src={Gptw} alt='gptw' style={{ position: 'absolute', top: 140, left: 50, height: 60 }} />
-			<img src={Gartner} alt='gartner' style={{ position: 'absolute', top: 140, left: 120, height: 60 }} />
+			<img src={Gptw} alt='gptw' style={{ position: 'absolute', top: 150, left: 50, height: 60 }} />
+			<img src={Gartner} alt='gartner' style={{ position: 'absolute', top: 150, left: 120, height: 60 }} />
 		</Card>
 		<div style={{ display: 'flex', gap: 8, width: '100%' }}>
 			<Card
-				className='experience'
+				className='secondary'
 				title={{
 					text: 'Helmate',
 					icon: <img src={Honda} alt='prototyping' />
@@ -108,7 +108,7 @@ const Experience = () => (
 			</Card>
 			<div className='gophing'>
 				<Card
-					className='experience'
+					className='secondary'
 					title={{
 						text: 'Gophing Around',
 						icon: <img src={HashCode} alt='hash-code' />

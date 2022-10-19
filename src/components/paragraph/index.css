@@ -7,9 +7,9 @@
     width: 100%;
 
     align-items: baseline;
-    justify-content: space-between;
+    justify-content: flex-start;
 }
 
-.paragraph-content {
-    width: 70%;
+.paragraph-title {
+    min-width: 30%;
 }

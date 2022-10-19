@@ -1,28 +1,4 @@
-.research {
-  padding: 0.75rem;
-
-  background-color: rgba(255, 255, 255, 0.25);
-  box-shadow: rgba(99, 99, 99, 0.1) 0px 2px 8px 0px;  
-} 
-
-.test-transparent .card-title {
-  font-size: large;
+.projects .card-title .title-text {
+  font-size: medium;
   padding-left: 8px;
-}
-
-.test-transparent .card-content {
-  padding: 8px;
-  background-color: rgba(230, 230, 230, 0.25);
-  box-shadow: rgba(99, 99, 99, 0.1) 0px 2px 8px 0px;  
-}
-
-.test-transparent .card-header {
-  align-items: flex-end;
-}
-
-.test-transparent .badge {
-  background: rgba(195, 219, 195, 0.25);
-
-  font-size: x-small;
-  font-weight: 400;
 }

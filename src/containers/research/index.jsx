@@ -10,9 +10,9 @@ import RoomPlanner from '../../assets/RoomPlanner.png'
 import './index.css'
 
 const Research = () => (
-	<Card className='secondary' title={{ text: 'Research' }} horizontal>
+	<Card className='primary research' title={{ text: 'Research' }}>
 		<Card
-			className='research'
+			className='secondary thesis'
 			title={{
 				text: 'Neural Volume Rendering',
 			}}
@@ -26,20 +26,14 @@ const Research = () => (
 				<Badge >{'Blender'}</Badge>
 			</div>
 		</Card>
-		<div style={{ display: 'flex', flexDirection: 'column', gap: 16, height: 'fit-content' }}>
+		<Card
+			className='secondary projects'
+			title={{
+				text: 'Publications',
+			}}
+		>
 			<Card
-				className='test-transparent'
-				title={{
-					text: 'Room Planner',
-					icon: <img src={RoomPlanner} alt='prototyping' style={{ filter: 'invert(1)' }} />,
-					badge: <Badge style={{ color: 'red' }} >{'WebGL'}</Badge>
-				}}
-				extra='Sept 2019'
-			>
-				{'Graphic framework for rendering an interactive room'}
-			</Card>
-			<Card
-				className='test-transparent'
+				className='tertiary project'
 				title={{
 					text: 'Abbot',
 					icon: <img src={Abbot} alt='prototyping' style={{ filter: 'invert(1)' }} />,
@@ -49,7 +43,25 @@ const Research = () => (
 			>
 				{'Acceptance paper for AVI 2018 International Conference on Advanced Visual Interfaces'}
 			</Card>
-		</div>
+		</Card>
+		<Card
+			className='secondary projects'
+			title={{
+				text: 'Projects',
+			}}
+		>
+			<Card
+				className='tertiary project'
+				title={{
+					text: 'Room Planner',
+					icon: <img src={RoomPlanner} alt='prototyping' style={{ filter: 'invert(1)' }} />,
+					badge: <Badge style={{ color: 'red' }} >{'WebGL'}</Badge>
+				}}
+				extra='Sept 2019'
+			>
+				{'Graphic framework for rendering an interactive room'}
+			</Card>
+		</Card>
 	</Card >
 )
 

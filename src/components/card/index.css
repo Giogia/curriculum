@@ -15,6 +15,38 @@
     width: 100%;
 
     overflow: hidden;
+
+    transition: .2s;
+
+    /* animation: out 0.5s forwards; */
+}
+
+/* .card:hover {
+    animation: in 0.5s forwards;
+} */
+
+@keyframes in {
+    from {
+        background-color: transparent;
+    }
+
+    to {
+        background-color: whitesmoke;
+        height: 100%;
+        width: 100%;
+    }
+}
+
+@keyframes out {
+    from {
+        background-color: whitesmoke;
+        height: 120%;
+        width: 120%;
+    }
+
+    to {
+        background-color: transparent;
+    }
 }
 
 .card-header {
@@ -28,9 +60,9 @@
     width: 100%;
 }
 
-.card-extra {    
+.card-extra {
     min-width: fit-content;
-    
+
     font-family: monospace;
     font-size: small;
     font-weight: 300;
@@ -47,7 +79,7 @@
     gap: 8px;
 
     border-radius: 8px;
-    padding: 0.1rem; 
+    padding: 0.1rem;
 }
 
 .card-background > img {
@@ -58,8 +90,4 @@
     height: 20rem;
 
     opacity: 0.05;
-}
-
-.test-transparent .card-background {
-    display: none;
 }

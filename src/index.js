@@ -20,13 +20,15 @@ const root = ReactDOM.createRoot(document.getElementById('root'))
 root.render(
 	<React.StrictMode>
 		<Card className='base'>
-			<Avatar icon={Icon}/>
+			<Avatar icon={Icon} />
 			<Details />
 			<Card className='main'>
 				<Contacts />
 				<Experience />
-				<Research />
-				<Education />
+				<div style={{ display: 'flex', height: 'fit-content', width: '100%' }}>
+					<Education />
+					<Research />
+				</div>
 			</Card>
 		</Card>
 	</React.StrictMode>

@@ -1,13 +1,21 @@
 .title {
     display: flex;
+    flex-direction: column;
     gap: 8px;
+}
 
+.title-content {
+    display: flex;
+    gap: 8px;
+}
+
+.title-text {
     font-size: x-large;
     font-weight: 500;
     color: black;
 }
 
-.title-icon > img{
+.title-icon>img {
     height: 24px;
     margin-bottom: 4px;
 }

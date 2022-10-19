@@ -5,8 +5,8 @@ import classNames from 'classnames'
 import Title from '../title'
 import './index.css'
 
-const Card = ({ children, className, title, subtitle, extra, horizontal = false }) => (
-	<div className={classNames(className, 'card')}>
+const Card = ({ children, className, title, subtitle, extra, style, horizontal = false }) => (
+	<div className={classNames(className, 'card')} style={style}>
 		<div className='card-header'>
 			<Title
 				className='card-title'
@@ -38,7 +38,8 @@ Card.propTypes = {
 		icon: PropTypes.node
 	}),
 	subtitle: PropTypes.node,
-	extra: PropTypes.node
+	extra: PropTypes.node,
+	style: PropTypes.object
 }
 
 export default Card
