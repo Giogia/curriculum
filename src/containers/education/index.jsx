@@ -12,11 +12,11 @@ import JiaoTong from '../../assets/JiaoTong.png'
 import './index.css'
 
 const Education = () => (
-	<Card className='primary education' title={{ text: 'Education' }} style={{ width: '65%' }}>
+	<Card className='primary education' title={{ text: 'Education' }}>
 		<Card
 			className='secondary'
 			title={{
-				text: 'Shanghai JiaoTong University',
+				text: 'Shanghai JiaoTong',
 				icon: <img src={JiaoTong} alt='university' />
 			}}
 			subtitle='Digital Media and Data Reconstruction Laboratory'
@@ -30,11 +30,6 @@ const Education = () => (
 							description={'Sept 2018 - Jul 2019'}
 							size={'medium'}
 						/>
-					}
-					content={
-						<div>
-							<b>{'Skills: '}</b>
-						</div>
 					}
 				/>
 			</Timeline>

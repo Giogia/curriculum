@@ -52,7 +52,7 @@ code {
 .main {
   height: 100%;
 
-  padding: 0.5rem;
+  padding: 0.5rem 0.25rem;
 
   background-color: white;
 
@@ -70,7 +70,7 @@ code {
 
 .primary {
   margin: 0;
-  padding: 0.5rem 0.5rem 0.5rem 0.75rem;
+  padding: 0.5rem 0.75rem;
 
   /* background-color: rgba(189, 200, 234, 0.25); */
   /* box-shadow: rgba(99, 99, 99, 0.1) 0px 2px 8px 0px;   */
@@ -80,6 +80,10 @@ code {
 
 .primary .card-title {
   padding-left: 8px;
+}
+
+.primary .card-title .title-text {
+  color: rgba(62, 87, 101, 0.5)
 }
 
 .primary:hover {
@@ -98,13 +102,25 @@ code {
   padding-left: 0;
 }
 
+.secondary .card-title .title-text {
+  color: rgba(0, 0, 0, 0.85)
+}
+
+.secondary .card-content {
+  gap: 16px;
+}
+
 .tertiary .card-title .title-text {
-  font-size: large;
+  font-size: medium;
   padding-left: 8px;
 }
 
+.tertiary .card-title .title-icon>img {
+  margin: 0;
+}
+
 .tertiary .card-content {
-  padding: 8px;
+  padding: 8px;  
   background-color: rgba(230, 230, 230, 0.25);
   box-shadow: rgba(99, 99, 99, 0.1) 0px 2px 8px 0px;
 }

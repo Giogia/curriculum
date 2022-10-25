@@ -8,6 +8,7 @@ import Details from './containers/details'
 import Education from './containers/education'
 import Experience from './containers/experience'
 import Research from './containers/research'
+import Publications from './containers/publications'
 
 import Avatar from './components/avatar'
 import Card from './components/card'
@@ -26,8 +27,11 @@ root.render(
 				<Contacts />
 				<Experience />
 				<div style={{ display: 'flex', height: 'fit-content', width: '100%' }}>
-					<Education />
 					<Research />
+					<div style={{ display: 'flex', flexDirection: 'column', height: 'fit-content' }}>
+						<Education />
+						<Publications />
+					</div>
 				</div>
 			</Card>
 		</Card>

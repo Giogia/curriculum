@@ -1,7 +1,7 @@
 import React from 'react'
 
+import Badge from '../../components/badge'
 import Card from '../../components/card'
-import Divider from '../../components/divider'
 import Paragraph from '../../components/paragraph'
 import Timeline from '../../components/timeline'
 import Title from '../../components/title'
@@ -24,7 +24,7 @@ const Experience = () => (
 				icon: <img src={MiaPlatform} key='work' alt='work' />,
 			}}
 			subtitle={<div>
-				{'developing a digital integration hub able to build platforms based on APIs, Microservices and Kubernetes '}
+				{'developing a digital integration hub: APIs · Composable Architectures · Kubernetes '}
 				<img src={Kubernetes} alt='gptw' style={{ height: 14 }} />
 			</div>}
 			extra='2020 - 2022'
@@ -42,24 +42,29 @@ const Experience = () => (
 					content={
 						<div style={{ display: 'flex', flexDirection: 'column', gap: 4, height: '100%', justifyContent: 'flex-start' }}>
 							<div>
-								<b>{'Internal Developer Portal development'}</b>
+								<b>{'Ownerships:'}</b>
+								<div>
+									<span>{'managing the official documentation releases'}</span>
+									<div>
+										<span>{'mantainer of the graphical components library: '}</span>
+										<span>{'Storybook · Chromatic · Figma'}</span>
+									</div>
+								</div>
 							</div>
 							<div>
-								<b>{'Ownership of releasing new company documentation versions'}</b>
+								<b>{'Projects:'}</b>
+								<div>
+									<span>{'Git Providers integrations: '}</span>
+									<span>{'Azure DevOps · Bitbucket'}</span>
+								</div>
+								<div>
+									<spa>{'Internal Developer Portal development'}</spa>
+								</div>
+								<div>
+									<span>{'Modular backoffice creation: '}</span>
+									<span>{'Microfrontend · Microlc · StencilJS · Web Components'}</span>
+								</div>
 							</div>
-							<div>
-								<b>{'Git Providers integrations: '}</b>
-								<span>{'Bitbucket · Docker · Azure DevOps · Gitlab · GitHub'}</span>
-							</div>
-							<div>
-								<b>{'Ownership of graphical components library: '}</b>
-								<span>{'Storybook · Chromatic · Figma'}</span>
-							</div>
-							<div>
-								<b>{'Modular backoffice creation: '}</b>
-								<span>{'Microfrontend · Microlc · StencilJS · Web Components'}</span>
-							</div>
-							{/* Microfrontend · Microlc · Bitbucket · MongoDB · Fastify · Ant Design · Docker · Azure DevOps · Gitlab · GitHub · Rego · StencilJS · Web Components · Docusaurus */}
 						</div>
 					}
 				/>
@@ -74,8 +79,20 @@ const Experience = () => (
 					content={
 						<div style={{ display: 'flex', flexDirection: 'column', gap: 4, height: '100%' }}>
 							<div>
-								<b>{'Console development: '}</b>
-								<span>{'Microservices · Node.js · React.js · Redux.js · Ant Design · TypeScript · Fastify· Test Driven Development · MongoDB · Docusaurus · Docker · Kubernetes'}</span>
+								<b>{'Frameworks & Libraries: '}</b>
+								<span>{'Node.js · React.js · Redux.js · Ant Design · Fastify'}</span>
+							</div>
+							<div>
+								<b>{'Concepts: '}</b>
+								<span>{'Microservices · Test Driven Development'}</span>
+							</div>
+							<div>
+								<b>{'Tools: '}</b>
+								<span>{'Gitlab · MongoDB · Docusaurus · Docker · Kubernetes'}</span>
+							</div>
+							<div>
+								<b>{'Languages: '}</b>
+								<span>{'Javascript · Typescript'}</span>
 							</div>
 						</div>
 					}
@@ -86,40 +103,43 @@ const Experience = () => (
 		</Card>
 		<div style={{ display: 'flex', gap: 8, width: '100%' }}>
 			<Card
+				className='secondary gophing'
+				title={{
+					text: 'Gophing Around',
+					icon: <img src={HashCode} alt='hash-code' />
+				}}
+			>
+				<div style={{ width: '100%', display: 'flex', flexDirection: 'column', alignItems: 'flex-start' }}>
+					<span>{'99th position @'}</span>
+					<span>{'Google Hash-Code 2022'}</span>
+				</div>
+			</Card>
+			<Card
 				className='secondary'
 				title={{
 					text: 'Helmate',
-					icon: <img src={Honda} alt='prototyping' />
+					icon: <img src={Honda} alt='prototyping' />,
+					badge: [
+						<Badge className={'helmate'} key={0}>{'Linux'}</Badge>,
+						<Badge className={'helmate'} key={1}>{'PocketSphinx'}</Badge>,
+						<Badge className={'helmate'} key={2}>{'Bluez'}</Badge>
+					]
 				}}
-				subtitle='Prototype Development for Honda Motor'
 				extra='May 2018'
 			>
-				<div style={{ display: 'flex', gap: '8px', width: '100%' }}>
-					<div style={{ height: '100%', display: 'flex', flexDirection: 'column', alignItems: 'center', gap: '8px' }}>
-						<span>{'Wearable object technological design in a Linux environment.'}</span>
-						{/* <span>{'Bone conduction speakers and laryngophone integration'}</span> */}
+				<div style={{ height: '100%', display: 'flex', flexDirection: 'column', gap: '0' }}>
+					<div style={{ height: '100%', display: 'flex', flexDirection: 'row', gap: '8px' }}>
+						<span>{'Prototype Development for Honda Motor'}</span>
+						<span>{'·'}</span>
+						<span>{'Wearable object design'}</span>
 					</div>
-					<Divider />
-					<div style={{ height: '100%', display: 'flex', flexDirection: 'column', alignItems: 'center', gap: '8px' }}>
-						<span>{'Hands-free voice control with PocketSphinx'}</span>
-						{/* <span>{'Bluetooth connectivity implementation with Bluez'}</span> */}
+					<div style={{ height: '100%', display: 'flex', flexDirection: 'row', gap: '8px' }}>
+						<span>{'Bone conduction speakers and laryngophone integration'}</span>
+						<span>{'·'}</span>
+						<span>{'Hands-free voice control'}</span>
 					</div>
 				</div>
 			</Card>
-			<div className='gophing'>
-				<Card
-					className='secondary'
-					title={{
-						text: 'Gophing Around',
-						icon: <img src={HashCode} alt='hash-code' />
-					}}
-				>
-					<div style={{ width: '100%', display: 'flex', flexDirection: 'column', alignItems: 'flex-start' }}>
-						<span>{'99th position @'}</span>
-						<span>{'Google Hash-Code 2022'}</span>
-					</div>
-				</Card>
-			</div>
 		</div>
 	</Card >
 )

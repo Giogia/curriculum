@@ -10,13 +10,13 @@ li.timeline-item {
     padding-left: 20px;
     margin-left: 10px;
 
-    background: linear-gradient(rgba(200, 197, 194, 0.75), rgba(200, 197, 194, 0.5)) left no-repeat;
-    background-size: 2px 70%;
+    background: linear-gradient(rgba(200, 197, 194, 0.75), rgba(200, 197, 194, 0.25)) left no-repeat;
+    background-size: 2px 80%;
 }
 
 li.timeline-item .title,
 li.timeline-item .title-text {
-    font-size: large;
+    font-size: medium;
 }
 
 li.timeline-item:last-child {

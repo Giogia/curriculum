@@ -5,4 +5,10 @@
 
   align-self: flex-start;
   padding-left: 16%;
+
+  margin-bottom: 1em;
+}
+
+.contacts .badge {
+  font-size: small;
 }
