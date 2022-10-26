@@ -15,6 +15,7 @@ import Card from './components/card'
 
 import './index.css'
 import 'antd/dist/antd.css'
+import { Column, Row } from './components/flex'
 
 const root = ReactDOM.createRoot(document.getElementById('root'))
 
@@ -26,13 +27,13 @@ root.render(
 			<Card className='main'>
 				<Contacts />
 				<Experience />
-				<div style={{ display: 'flex', height: 'fit-content', width: '100%' }}>
+				<Row gap={12}>
 					<Research />
-					<div style={{ display: 'flex', flexDirection: 'column', height: 'fit-content' }}>
+					<Column gap={26}>
 						<Education />
 						<Publications />
-					</div>
-				</div>
+					</Column>
+				</Row>
 			</Card>
 		</Card>
 	</React.StrictMode>

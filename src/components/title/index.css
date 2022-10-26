@@ -5,13 +5,17 @@
 
 .title-content {
     display: flex;
+    align-items: center;
     gap: 8px;
 }
 
 .title-text {
     font-size: large;
     font-weight: 500;
-    color: black;
+}
+
+.title-description {
+    font-size: small;
 }
 
 .title-icon>img {

@@ -5,6 +5,7 @@ import Card from '../../components/card'
 import Paragraph from '../../components/paragraph'
 import Timeline from '../../components/timeline'
 import Title from '../../components/title'
+import { Column, Row } from '../../components/flex'
 
 import MiaPlatform from '../../assets/Mia-Platform.png'
 import Honda from '../../assets/Honda.png'
@@ -12,20 +13,24 @@ import Gptw from '../../assets/Gptw.png'
 import Gartner from '../../assets/Gartner.png'
 import Kubernetes from '../../assets/Kubernetes.png'
 import HashCode from '../../assets/Hashcode.png'
+import Storybook from '../../assets/Storybook.png'
+import Chromatic from '../../assets/Chromatic.png'
+import Figma from '../../assets/Figma.png'
 
 import './index.css'
 
 const Experience = () => (
 	<Card className='primary experience' title={{ text: 'Experience' }} >
 		<Card
-			className='secondary'
+			className='secondary mia'
 			title={{
 				text: 'Mia Platform',
 				icon: <img src={MiaPlatform} key='work' alt='work' />,
 			}}
 			subtitle={<div>
-				{'developing a digital integration hub: APIs · Composable Architectures · Kubernetes '}
-				<img src={Kubernetes} alt='gptw' style={{ height: 14 }} />
+				<span>{'developing a digital integration hub: '}</span>
+				<span className='semi-bold'>{'APIs · Composable Architectures · Kubernetes '}</span>
+				<img src={Kubernetes} alt='gptw' style={{ height: 12, marginBottom: 2 }} />
 			</div>}
 			extra='2020 - 2022'
 			horizontal
@@ -40,32 +45,40 @@ const Experience = () => (
 						/>
 					}
 					content={
-						<div style={{ display: 'flex', flexDirection: 'column', gap: 4, height: '100%', justifyContent: 'flex-start' }}>
+						<Column gap={8}>
 							<div>
 								<b>{'Ownerships:'}</b>
 								<div>
-									<span>{'managing the official documentation releases'}</span>
 									<div>
-										<span>{'mantainer of the graphical components library: '}</span>
-										<span>{'Storybook · Chromatic · Figma'}</span>
+										<span>{'·  mantainer of the graphical components library: '}</span>
+
+										<span className='semi-bold'>{'Storybook '}</span>
+										<img src={Storybook} alt='storybook' style={{ height: 12, marginBottom: 2 }} />
+
+										<span className='semi-bold'>{' · Chromatic '}</span>
+										<img src={Chromatic} alt='chromatic' style={{ height: 12, marginBottom: 2 }} />
+
+										<span className='semi-bold'>{' · Figma '}</span>
+										<img src={Figma} alt='figma' style={{ height: 12, marginBottom: 2 }} />
 									</div>
+									<div>{'·  owner of the official documentation releases'}</div>
 								</div>
 							</div>
 							<div>
 								<b>{'Projects:'}</b>
 								<div>
-									<span>{'Git Providers integrations: '}</span>
-									<span>{'Azure DevOps · Bitbucket'}</span>
+									<span>{'·  Modular backoffice creation: '}</span>
+									<span className='semi-bold'>{'Microfrontend · Microlc · StencilJS · Web Components'}</span>
 								</div>
 								<div>
-									<spa>{'Internal Developer Portal development'}</spa>
+									<span>{'·  Internal Developer Portal development'}</span>
 								</div>
 								<div>
-									<span>{'Modular backoffice creation: '}</span>
-									<span>{'Microfrontend · Microlc · StencilJS · Web Components'}</span>
+									<span>{'·  Git Providers integrations: '}</span>
+									<span className='semi-bold'>{'Azure DevOps · Bitbucket'}</span>
 								</div>
 							</div>
-						</div>
+						</Column>
 					}
 				/>
 				<Paragraph
@@ -77,31 +90,31 @@ const Experience = () => (
 						/>
 					}
 					content={
-						<div style={{ display: 'flex', flexDirection: 'column', gap: 4, height: '100%' }}>
-							<div>
-								<b>{'Frameworks & Libraries: '}</b>
+						<div style={{ display: 'grid', gridTemplateColumns: '1fr auto', gridTemplateRows: '1fr 1fr', gap: 8 }}>
+							<Card className='tertiary' >
+								<span className='semi-bold'>{'Frameworks & Libraries: '}</span>
 								<span>{'Node.js · React.js · Redux.js · Ant Design · Fastify'}</span>
-							</div>
-							<div>
-								<b>{'Concepts: '}</b>
-								<span>{'Microservices · Test Driven Development'}</span>
-							</div>
-							<div>
-								<b>{'Tools: '}</b>
-								<span>{'Gitlab · MongoDB · Docusaurus · Docker · Kubernetes'}</span>
-							</div>
-							<div>
-								<b>{'Languages: '}</b>
+							</Card>
+							<Card className='tertiary'>
+								<span className='semi-bold'>{'Languages: '}</span>
 								<span>{'Javascript · Typescript'}</span>
-							</div>
+							</Card>
+							<Card className='tertiary'>
+								<span className='semi-bold'>{'Tools: '}</span>
+								<span>{'Gitlab · MongoDB · Docusaurus · Docker · Kubernetes'}</span>
+							</Card>
+							<Card className='tertiary'>
+								<span className='semi-bold'>{'Concepts: '}</span>
+								<span>{'Microservices · Test Driven Development'}</span>
+							</Card>
 						</div>
 					}
 				/>
 			</Timeline>
-			<img src={Gptw} alt='gptw' style={{ position: 'absolute', top: 150, left: 50, height: 60 }} />
-			<img src={Gartner} alt='gartner' style={{ position: 'absolute', top: 150, left: 120, height: 60 }} />
+			<img src={Gptw} alt='gptw' style={{ position: 'absolute', top: 150, left: 50, height: 60, borderRadius: 4 }} />
+			<img src={Gartner} alt='gartner' style={{ position: 'absolute', top: 150, left: 120, height: 60, borderRadius: 4 }} />
 		</Card>
-		<div style={{ display: 'flex', gap: 8, width: '100%' }}>
+		<Row gap={12}>
 			<Card
 				className='secondary gophing'
 				title={{
@@ -109,10 +122,10 @@ const Experience = () => (
 					icon: <img src={HashCode} alt='hash-code' />
 				}}
 			>
-				<div style={{ width: '100%', display: 'flex', flexDirection: 'column', alignItems: 'flex-start' }}>
+				<Column>
 					<span>{'99th position @'}</span>
 					<span>{'Google Hash-Code 2022'}</span>
-				</div>
+				</Column>
 			</Card>
 			<Card
 				className='secondary'
@@ -127,20 +140,20 @@ const Experience = () => (
 				}}
 				extra='May 2018'
 			>
-				<div style={{ height: '100%', display: 'flex', flexDirection: 'column', gap: '0' }}>
-					<div style={{ height: '100%', display: 'flex', flexDirection: 'row', gap: '8px' }}>
+				<Column>
+					<Row gap={8}>
 						<span>{'Prototype Development for Honda Motor'}</span>
 						<span>{'·'}</span>
 						<span>{'Wearable object design'}</span>
-					</div>
-					<div style={{ height: '100%', display: 'flex', flexDirection: 'row', gap: '8px' }}>
+					</Row>
+					<Row gap={8}>
 						<span>{'Bone conduction speakers and laryngophone integration'}</span>
 						<span>{'·'}</span>
 						<span>{'Hands-free voice control'}</span>
-					</div>
-				</div>
+					</Row>
+				</Column>
 			</Card>
-		</div>
+		</Row>
 	</Card >
 )
 

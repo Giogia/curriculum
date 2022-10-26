@@ -16,27 +16,6 @@ const Education = () => (
 		<Card
 			className='secondary'
 			title={{
-				text: 'Shanghai JiaoTong',
-				icon: <img src={JiaoTong} alt='university' />
-			}}
-			subtitle='Digital Media and Data Reconstruction Laboratory'
-			extra='2018 - 2019'
-		>
-			<Timeline>
-				<Paragraph
-					title={
-						<Title
-							text={'Researcher'}
-							description={'Sept 2018 - Jul 2019'}
-							size={'medium'}
-						/>
-					}
-				/>
-			</Timeline>
-		</Card>
-		<Card
-			className='secondary'
-			title={{
 				text: 'Politecnico of Milan',
 				icon: <img src={Politecnico} alt='university' />
 			}}
@@ -54,7 +33,6 @@ const Education = () => (
 					}
 					content={
 						<Badge>{'109/110'}</Badge>
-
 					}
 				/>
 				<Paragraph
@@ -67,6 +45,30 @@ const Education = () => (
 					}
 					content={
 						<Badge>{'99/110'}</Badge>
+					}
+				/>
+			</Timeline>
+		</Card>
+		<Card
+			className='secondary'
+			title={{
+				text: 'Shanghai JiaoTong',
+				icon: <img src={JiaoTong} alt='university' />
+			}}
+			subtitle='Digital Media and Data Reconstruction Laboratory'
+			extra='2018 - 2019'
+		>
+			<Timeline>
+				<Paragraph
+					title={
+						<Title
+							text={'Researcher'}
+							description={'Sept 2018 - Jul 2019'}
+							size={'medium'}
+						/>
+					}
+					content={
+						<Badge>{'GPA: 3.76/4.0'}</Badge>
 					}
 				/>
 			</Timeline>

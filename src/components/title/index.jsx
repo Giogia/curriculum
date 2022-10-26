@@ -15,7 +15,9 @@ const Title = ({ text, icon, badge, description, className, size }) => (
 			</div>
 			{badge}
 		</div>
-		{description}
+		<div className='title-description'>
+			{description}
+		</div>
 	</div>
 )
 

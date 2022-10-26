@@ -15,15 +15,17 @@ const Publications = () => (
 		}}
 	>
 		<Card
-			className='secondary project'
+			className='secondary'
 			title={{
 				text: 'Abbot',
 				icon: <img src={Abbot} alt='prototyping' style={{ filter: 'invert(1)' }} />,
-				badge: <Badge >{'Raspberry Pi'}</Badge>
 			}}
 			extra='Sept 2017'
 		>
-			{'Acceptance paper for AVI 2018 International Conference on Advanced Visual Interfaces'}
+			<>
+				{'Acceptance paper for AVI 2018 International Conference on Advanced Visual Interfaces'}
+				<Badge >{'Raspberry Pi'}</Badge>
+			</>
 		</Card>
 	</Card>
 )

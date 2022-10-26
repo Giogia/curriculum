@@ -1,21 +1,17 @@
 .details {
-  display: flex;
-  flex-direction: column;
-  gap: 4px;
-
   justify-content: center;
   align-self: flex-start;
-  padding-left: 16.5%;
 
+  padding-left: 16%;
   height: 7%;
 }
 
-.details .name {
-    color: white !important;
+.details .name .title-text {
+  color: white;
 }
 
 .details .job {
-    color: white !important;
-    font-size: medium;
-    padding-left: 8px;
+  color: white;
+  font-size: medium;
+  padding-left: 8px;
 }

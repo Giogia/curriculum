@@ -7,19 +7,21 @@ import './index.css'
 
 const Card = ({ children, className, title, subtitle, extra, style, horizontal = false }) => (
 	<div className={classNames(className, 'card')} style={style}>
-		<div className='card-header'>
-			<Title
-				className='card-title'
-				badge={title?.badge}
-				text={title?.text}
-				icon={title?.icon}
-				description={subtitle}
-			/>
-			<div className='card-extra'>
-				{extra}
+		{title &&
+			<div className='card-header'>
+				<Title
+					className='card-title'
+					badge={title?.badge}
+					text={title?.text}
+					icon={title?.icon}
+					description={subtitle}
+				/>
+				<div className='card-extra'>
+					{extra}
+				</div>
 			</div>
-		</div>
-		<div className='card-content' style={{flexDirection: horizontal ? 'row': 'column'}}>
+		}
+		<div className='card-content' style={{ flexDirection: horizontal ? 'row' : 'column' }}>
 			{children}
 		</div>
 		{/* <div className='card-background'>

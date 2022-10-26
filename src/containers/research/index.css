@@ -1,9 +1,9 @@
-.publications .card-title .title-text {
+.projects .card-title .title-text {
   font-size: medium;
   padding-left: 8px;
 }
 
-.projects .card-title .title-text {
-  font-size: medium;
-  padding-left: 8px;
+.project .card-content .badge {
+  background: rgba(196, 189, 189, 0.254);
+  align-self: flex-end;
 }
