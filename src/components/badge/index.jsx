@@ -4,17 +4,19 @@ import classNames from 'classnames'
 
 import './index.css'
 
-const Badge = ({ children, className, icon }) => (
+const Badge = ({ children, className, icon, logo }) => (
 	<div className={classNames(className, 'badge')}>
 		{icon}
 		{children}
+		{logo}
 	</div>
 )
 
 Badge.propTypes = {
 	children: PropTypes.node,
 	className: PropTypes.string,
-	icon: PropTypes.node
+	icon: PropTypes.node,
+	logo: PropTypes.node
 }
 
 export default Badge

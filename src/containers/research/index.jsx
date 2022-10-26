@@ -4,10 +4,13 @@ import Badge from '../../components/badge'
 import Card from '../../components/card'
 import { Column, Row } from '../../components/flex'
 
+import Pytorch from '../../assets/Pytorch.png'
+import Blender from '../../assets/Blender.png'
 import RoomPlanner from '../../assets/RoomPlanner.png'
+import WebGL from '../../assets/WebGL.png'
 import OpenCV from '../../assets/OpenCV.png'
 import FashionMNIST from '../../assets/Fashion-MNIST.png'
-
+import ScikitLearn from '../../assets/ScikitLearn.png'
 
 import './index.css'
 
@@ -24,8 +27,12 @@ const Research = () => (
 			<span>{'reconstructing novel viewpoints of realistic tridimensional scenes filmed with multiple depth cameras.'}</span>
 			<Row gap={8}>
 				<Badge >{'Variational Autoencoder'}</Badge>
-				<Badge >{'Pytorch'}</Badge>
-				<Badge >{'Blender'}</Badge>
+				<Badge 
+					logo={<img src={Pytorch} alt='pytorch' style={{ height: 16 }} />}
+				>{'Pytorch'}</Badge>
+				<Badge 
+					logo={<img src={Blender} alt='blender' style={{ height: 16 }} />}
+				>{'Blender'}</Badge>
 			</Row>
 		</Card>
 		<Card
@@ -38,8 +45,11 @@ const Research = () => (
 				className='tertiary project'
 				title={{
 					text: 'Room Planner',
-					icon: <img src={RoomPlanner} alt='prototyping' style={{ filter: 'invert(1)' }} />,
-					badge: <Badge>{'WebGL 2.0'}</Badge>
+					icon: <img src={RoomPlanner} alt='room-planner' style={{ filter: 'invert(1)' }} />,
+					badge:
+						<Badge
+							logo={<img src={WebGL} alt='scikitlearn' style={{ height: 16 }} />}
+						>{'WebGL 2.0'}</Badge>
 				}}
 				extra='Sept 2019'
 			>
@@ -49,8 +59,10 @@ const Research = () => (
 				className='tertiary project'
 				title={{
 					text: 'Room Reconstruction from a single image',
-					icon: <img src={OpenCV} alt='prototyping' />,
-					badge: <Badge>{'OpenCV'}</Badge>
+					badge:
+						<Badge
+							logo={<img src={OpenCV} alt='prototyping' style={{ height: 16 }} />}
+						>{'OpenCV'}</Badge>
 				}}
 				extra='Sept 2019'
 			>
@@ -68,8 +80,11 @@ const Research = () => (
 				className='tertiary project'
 				title={{
 					text: 'Fashion MNIST classification',
-					icon: <img src={FashionMNIST} alt='prototyping' style={{ filter: 'invert(1)' }} />,
-					badge: <Badge>{'Scikit-Learn'}</Badge>
+					icon: <img src={FashionMNIST} alt='fashionmnist' style={{ filter: 'invert(1)' }} />,
+					badge:
+						<Badge
+							logo={<img src={ScikitLearn} alt='scikitlearn' style={{ height: 16 }} />}
+						>{'Scikit-Learn'}</Badge>
 				}}
 				extra='Sept 2019'
 			>

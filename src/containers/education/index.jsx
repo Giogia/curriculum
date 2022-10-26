@@ -17,7 +17,7 @@ const Education = () => (
 			className='secondary'
 			title={{
 				text: 'Politecnico of Milan',
-				icon: <img src={Politecnico} alt='university' />
+				icon: <img src={Politecnico} alt='Polimi' />
 			}}
 			subtitle='Computer and Science Engineering'
 			extra='2014 - 2020'
@@ -53,7 +53,7 @@ const Education = () => (
 			className='secondary'
 			title={{
 				text: 'Shanghai JiaoTong',
-				icon: <img src={JiaoTong} alt='university' />
+				icon: <img src={JiaoTong} alt='sjtu' />
 			}}
 			subtitle='Digital Media and Data Reconstruction Laboratory'
 			extra='2018 - 2019'

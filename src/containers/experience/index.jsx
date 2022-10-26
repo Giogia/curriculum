@@ -16,6 +16,22 @@ import HashCode from '../../assets/Hashcode.png'
 import Storybook from '../../assets/Storybook.png'
 import Chromatic from '../../assets/Chromatic.png'
 import Figma from '../../assets/Figma.png'
+import MicroLc from '../../assets/MicroLc.png'
+import StencilJS from '../../assets/StencilJS.png'
+import Azure from '../../assets/Azure.png'
+import Bitbucket from '../../assets/Bitbucket.png'
+import WebComponents from '../../assets/WebComponents.png'
+import NodeJS from '../../assets/NodeJS.png'
+import ReactJS from '../../assets/ReactJS.png'
+import ReduxJS from '../../assets/ReduxJS.png'
+import Ant from '../../assets/Ant.png'
+import Fastify from '../../assets/Fastify.png'
+import JS from '../../assets/JS.png'
+import TS from '../../assets/TS.png'
+import Gitlab from '../../assets/Gitlab.png'
+import MongoDB from '../../assets/MongoDB.png'
+import Docusaurus from '../../assets/Docusaurus.png'
+import Docker from '../../assets/Docker.png'
 
 import './index.css'
 
@@ -29,8 +45,7 @@ const Experience = () => (
 			}}
 			subtitle={<div>
 				<span>{'developing a digital integration hub: '}</span>
-				<span className='semi-bold'>{'APIs · Composable Architectures · Kubernetes '}</span>
-				<img src={Kubernetes} alt='gptw' style={{ height: 12, marginBottom: 2 }} />
+				<span className='semi-bold'>{'APIs · Composable Architectures · Kubernetes'}</span>
 			</div>}
 			extra='2020 - 2022'
 			horizontal
@@ -68,14 +83,23 @@ const Experience = () => (
 								<b>{'Projects:'}</b>
 								<div>
 									<span>{'·  Modular backoffice creation: '}</span>
-									<span className='semi-bold'>{'Microfrontend · Microlc · StencilJS · Web Components'}</span>
+									<span className='semi-bold'>{'Microlc '}</span>
+									<img src={MicroLc} alt='microlc' style={{ height: 12, marginBottom: 2 }} />
+									<span classNzame='semi-bold'>{' · StencilJS '}</span>
+									<img src={StencilJS} alt='stenciljs' style={{ height: 12, marginBottom: 2 }} />
+									<span className='semi-bold'>{' · Web Components '}</span>
+									<img src={WebComponents} alt='web-components' style={{ height: 12, marginBottom: 2 }} />
+									<span className='semi-bold'>{' · Microfrontend'}</span>
 								</div>
 								<div>
 									<span>{'·  Internal Developer Portal development'}</span>
 								</div>
 								<div>
 									<span>{'·  Git Providers integrations: '}</span>
-									<span className='semi-bold'>{'Azure DevOps · Bitbucket'}</span>
+									<span className='semi-bold'>{'Azure DevOps '}</span>
+									<img src={Azure} alt='azure' style={{ height: 12, marginBottom: 2 }} />
+									<span className='semi-bold'>{' · Bitbucket '}</span>
+									<img src={Bitbucket} alt='bitbucket' style={{ height: 12, marginBottom: 2 }} />
 								</div>
 							</div>
 						</Column>
@@ -93,15 +117,42 @@ const Experience = () => (
 						<div style={{ display: 'grid', gridTemplateColumns: '1fr auto', gridTemplateRows: '1fr 1fr', gap: 8 }}>
 							<Card className='tertiary' >
 								<span className='semi-bold'>{'Frameworks & Libraries: '}</span>
-								<span>{'Node.js · React.js · Redux.js · Ant Design · Fastify'}</span>
+								<Row gap={6} style={{ alignItems: 'center' }}>
+									<span>{'Node.js '}</span>
+									<img src={NodeJS} alt='nodejs' style={{ height: 12 }} />
+									<span>{' · React '}</span>
+									<img src={ReactJS} alt='react' style={{ height: 12 }} />
+									<span>{' · Redux '}</span>
+									<img src={ReduxJS} alt='redux' style={{ height: 12 }} />
+									<span>{' · Ant Design '}</span>
+									<img src={Ant} alt='ant' style={{ height: 12 }} />
+									<span>{' · Fastify '}</span>
+									<img src={Fastify} alt='fastify' style={{ height: 12 }} />
+								</Row>
 							</Card>
 							<Card className='tertiary'>
 								<span className='semi-bold'>{'Languages: '}</span>
-								<span>{'Javascript · Typescript'}</span>
+								<Row gap={6} style={{ alignItems: 'center' }}>
+									<span>{'Javascript '}</span>
+									<img src={JS} alt='javascript' style={{ height: 12 }} />
+									<span>{' · Typescript'}</span>
+									<img src={TS} alt='typescript' style={{ height: 12 }} />
+								</Row>
 							</Card>
 							<Card className='tertiary'>
 								<span className='semi-bold'>{'Tools: '}</span>
-								<span>{'Gitlab · MongoDB · Docusaurus · Docker · Kubernetes'}</span>
+								<Row gap={6} style={{ alignItems: 'center' }}>
+									<span>{'Gitlab '}</span>
+									<img src={Gitlab} alt='gitlab' style={{ height: 12 }} />
+									<span>{' · MongoDB '}</span>
+									<img src={MongoDB} alt='mongodb' style={{ height: 12 }} />
+									<span>{' · Docusaurus '}</span>
+									<img src={Docusaurus} alt='docusaurus' style={{ height: 12 }} />
+									<span>{' · Docker '}</span>
+									<img src={Docker} alt='docker' style={{ height: 12 }} />
+									<span>{' · Kubernetes'}</span>
+									<img src={Kubernetes} alt='kubernetes' style={{ height: 12 }} />
+								</Row>
 							</Card>
 							<Card className='tertiary'>
 								<span className='semi-bold'>{'Concepts: '}</span>

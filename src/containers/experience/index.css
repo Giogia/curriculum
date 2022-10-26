@@ -1,3 +1,11 @@
+.mia .paragraph {
+  gap: 16px;
+}
+
+.mia .paragraph-title {
+  max-width: 20%;
+}
+
 .mia .tertiary .card-content {
   gap: 0;
   font-size: small;
@@ -22,6 +30,6 @@
 }
 
 .helmate.badge {
-  background-color: rgba(255, 190, 190, 0.25);
+  background-color: rgba(255, 190, 190, 0.2);
   line-height: 12px;
 }

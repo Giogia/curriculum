@@ -14,7 +14,7 @@ const Avatar = ({ className, icon, size = 128 }) => (
 			width: px(size)
 		}}>
 		{icon ?
-			<img src={icon} alt="logo" style={{	width: size }} /> :
+			<img src={icon} alt="avatar" style={{	width: size }} /> :
 			<UserOutlined style={{ fontSize: size / 2 }} />
 		}
 	</div>
