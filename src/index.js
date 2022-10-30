@@ -10,6 +10,7 @@ import Experience from './containers/experience'
 import Projects from './containers/projects'
 import Publications from './containers/publications'
 import Thesis from './containers/thesis'
+import Passions from './containers/passions'
 
 import Avatar from './components/avatar'
 import Card from './components/card'
@@ -36,6 +37,7 @@ root.render(
 					<Projects />
 					<Education />
 				</Grid>
+				<Passions />
 			</Card>
 		</Card>
 	</React.StrictMode>

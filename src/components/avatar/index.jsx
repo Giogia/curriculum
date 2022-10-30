@@ -7,7 +7,7 @@ import './index.css'
 
 const px = (number) => `${number}px`
 
-const Avatar = ({ className, icon, size = 152 }) => (
+const Avatar = ({ className, icon, size = 128 }) => (
 	<>
 		<div className={classNames(className, 'avatar')}
 			style={{

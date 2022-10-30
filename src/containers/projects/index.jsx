@@ -12,13 +12,14 @@ import FashionMNIST from '../../assets/Fashion-MNIST.png'
 import ScikitLearn from '../../assets/ScikitLearn.png'
 import Lorenzo from '../../assets/Lorenzo.png'
 import Java from '../../assets/Java.png'
+import Tensorflow from '../../assets/Tensorflow.png'
 
 import './index.css'
 
 const Projects = () => (
 	<Card className='primary' title={{ text: 'Projects' }}>
 		<Card className='secondary projects'>
-			<Grid columns='repeat(9, 1fr)' gap={8} style={{ gridAutoRows: 'min-content' }}>
+			<Grid columns='repeat(9, 1fr)' gap={16} style={{ gridAutoRows: 'min-content' }}>
 				<Card
 					className='tertiary project'
 					title={{
@@ -43,9 +44,12 @@ const Projects = () => (
 					style={{ gridColumn: '5/10' }}
 				>
 					{'Comparison of different machine learning models categorizing clothes'}
-					<Badge logo={<img src={ScikitLearn} alt='scikitlearn' style={{ height: 16 }} />}>
-						{'Scikit-Learn'}
-					</Badge>
+					<Row gap={8}>
+						<Badge>{'Jupyter Notebook'}</Badge>
+						<Badge logo={<img src={ScikitLearn} alt='scikitlearn' style={{ height: 16 }} />}>
+							{'Scikit-Learn'}
+						</Badge>
+					</Row>
 				</Card>
 				<Card
 					className='tertiary project'
@@ -75,32 +79,35 @@ const Projects = () => (
 				</Card>
 				<Card
 					className='tertiary project'
-					title={{ text: 'Object Tracking' }}
+					title={{ text: 'Style Transfer' }}
 					extra='Dec 2018'
 					style={{ gridColumn: '7/10' }}
 				>
-					{'Implementation of a real-time object tracking algorithm'}
-					<Badge>{'CNN'}</Badge>
+					{'Optimizing performances of Gatys style transfer architecture'}
+					<Badge>{'Convolutional Neural Networks'}</Badge>
 				</Card>
 				<Card
 					className='tertiary project'
-					title={{ text: 'Image Style Transfer' }}
-					extra='Dec 2018'
+					title={{ text: 'SiamFC Object Tracking' }}
+					extra='April 2019'
 					style={{ gridColumn: '1/6' }}
 				>
-					{'Improving Gatys architecture'}
-					<Badge>{'CNN'}</Badge>
+					{'Implementation and hyperparameter tuning of a real-time object tracking algorithm'}
+					<Row gap={8}>
+						<Badge>{'Siamese Neural Networks'}</Badge>
+						<Badge logo={<img src={Tensorflow} alt='tensor-flow' style={{ height: 16 }} />}>{'TensorFlow'}</Badge>
+					</Row>
 				</Card>
 				<Card
 					className='tertiary project'
 					title={{
 						text: 'Lorenzo il Magnifico',
-						icon: <img src={Lorenzo} alt='lorenzo' />,
+						icon: <img src={Lorenzo} alt='lorenzo' style={{ height: 20 }} />,
 					}}
 					extra='July 2017'
 					style={{ gridColumn: '6/10' }}
 				>
-					{'Videogame transposition of board game'}
+					{'Videogame transposition of a board game using JavaFx'}
 					<Row gap={8}>
 						<Badge>{'Cranio Creations'}</Badge>
 						<Badge logo={<img src={Java} alt='java' style={{ height: 16 }} />}>

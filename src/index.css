@@ -60,7 +60,7 @@ code {
 }
 
 .main .card-content {
-  gap: 1em;
+  gap: 0.75em;
   padding: 0 0.5em;
 }
 
