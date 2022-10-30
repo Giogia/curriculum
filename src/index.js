@@ -7,15 +7,16 @@ import Contacts from './containers/contacts'
 import Details from './containers/details'
 import Education from './containers/education'
 import Experience from './containers/experience'
-import Research from './containers/research'
+import Projects from './containers/projects'
 import Publications from './containers/publications'
+import Thesis from './containers/thesis'
 
 import Avatar from './components/avatar'
 import Card from './components/card'
 
 import './index.css'
 import 'antd/dist/antd.css'
-import { Column, Row } from './components/flex'
+import Grid from './components/grid'
 
 const root = ReactDOM.createRoot(document.getElementById('root'))
 
@@ -27,15 +28,14 @@ root.render(
 			<Card className='main'>
 				<Contacts />
 				<Experience />
-				<Row>
-					<Column gap={12}>
-						<Research />
-					</Column>
-					<Column gap={26}>
-						<Education />
-						<Publications />
-					</Column>
-				</Row>
+				<Grid columns='auto auto'>
+					<Thesis />
+					<Publications />
+				</Grid>
+				<Grid columns='1fr 0.5fr'>
+					<Projects />
+					<Education />
+				</Grid>
 			</Card>
 		</Card>
 	</React.StrictMode>

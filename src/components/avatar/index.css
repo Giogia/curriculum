@@ -5,16 +5,39 @@
     justify-content: center;
 
     position: absolute;
-    top: 1.2em;
-    left: 2em;
+    top: 1.5em;
+    left: 3em;
 
+    border: 3px solid white;
+    background-color: white;
+
+    border-radius: 50%;
     overflow: hidden;
 
     z-index: 10;
+}
 
-    /* border: 1px solid whitesmoke; */
+.avatar-shadow {
+    position: absolute;
+    top: 1.5em;
+    left: 3em;
 
     border-radius: 50%;
-    background-color: aliceblue;
-    box-shadow: rgba(99, 99, 99, 0.5) 0px 2px 8px 0px;  
+
+    z-index: 9;
+
+    box-shadow: rgba(99, 99, 99, 0.6) 0px 2px 8px 0px;
+}
+
+.avatar-shadow:after {
+    position: absolute;
+    content: '';
+    width: calc(100% + 24px);
+    height: 67.5%;
+
+    background-color: white;
+    /* opacity: 0.75; */
+
+    top: 0;
+    left: -12px;
 }

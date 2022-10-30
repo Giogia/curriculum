@@ -1,8 +1,8 @@
-.projects .card-content {
-  gap: 2em;
+
+.project .card-content {
+  gap: 1em;
 }
 
 .project .card-content .badge {
   background: rgba(229, 228, 228);
-  align-self: flex-end;
 }

@@ -1,26 +1,5 @@
-.mia .paragraph {
-  gap: 16px;
-}
-
-.mia .paragraph-title {
-  max-width: 20%;
-}
-
-.mia .tertiary .card-content {
-  font-size: small;
-}
-
-.mia .semi-bold {
-  color: rgba(15, 16, 19, 0.75);
-  font-weight: 500;
-}
-
-.mia .tertiary .semi-bold {
-  font-weight: 600;
-}
-
 .gophing {
-  width: 50%;
+  width: 60%;
 }
 
 .gophing .title-icon {
@@ -30,5 +9,4 @@
 
 .helmate.badge {
   background-color: rgba(255, 190, 190, 0.2);
-  line-height: 12px;
 }
