@@ -50,7 +50,7 @@ const Experience = () => (
 			extra='2020 - 2022'
 			horizontal
 		>
-			<Timeline color='rgba(145, 173, 255, 0.25)'>
+			<Timeline>
 				<Paragraph
 					title={
 						<Title
@@ -60,48 +60,46 @@ const Experience = () => (
 						/>
 					}
 					content={
-						<Column gap={8}>
-							<div>
-								<b>{'Ownerships:'}</b>
+						<Column gap={'0.75em'} style={{ width: '100%' }}>
+							<Card className='tertiary'>
+								<div className='semi-bold'>{'Ownerships:'}</div>
 								<div>
-									<div>
-										<span>{'·  mantainer of the graphical components library: '}</span>
+									<span>{'·  mantainer of the graphical components library: '}</span>
 
-										<span className='semi-bold'>{'Storybook '}</span>
-										<img src={Storybook} alt='storybook' style={{ height: 12, marginBottom: 2 }} />
+									<span>{'Storybook '}</span>
+									<img src={Storybook} alt='storybook' style={{ height: 12, marginBottom: 2 }} />
 
-										<span className='semi-bold'>{' · Chromatic '}</span>
-										<img src={Chromatic} alt='chromatic' style={{ height: 12, marginBottom: 2 }} />
+									<span>{' · Chromatic '}</span>
+									<img src={Chromatic} alt='chromatic' style={{ height: 12, marginBottom: 2 }} />
 
-										<span className='semi-bold'>{' · Figma '}</span>
-										<img src={Figma} alt='figma' style={{ height: 12, marginBottom: 2 }} />
-									</div>
-									<div>{'·  owner of the official documentation releases'}</div>
+									<span>{' · Figma '}</span>
+									<img src={Figma} alt='figma' style={{ height: 12, marginBottom: 2 }} />
 								</div>
-							</div>
-							<div>
-								<b>{'Projects:'}</b>
+								<div>{'·  owner of the official documentation releases'}</div>
+							</Card>
+							<Card className='tertiary'>
+								<div className='semi-bold'>{'Projects:'}</div>
 								<div>
 									<span>{'·  Modular backoffice creation: '}</span>
-									<span className='semi-bold'>{'Microlc '}</span>
+									<span>{'Microlc '}</span>
 									<img src={MicroLc} alt='microlc' style={{ height: 12, marginBottom: 2 }} />
-									<span classNzame='semi-bold'>{' · StencilJS '}</span>
+									<span>{' · StencilJS '}</span>
 									<img src={StencilJS} alt='stenciljs' style={{ height: 12, marginBottom: 2 }} />
-									<span className='semi-bold'>{' · Web Components '}</span>
+									<span>{' · Web Components '}</span>
 									<img src={WebComponents} alt='web-components' style={{ height: 12, marginBottom: 2 }} />
-									<span className='semi-bold'>{' · Microfrontend'}</span>
+									<span>{' · Microfrontend'}</span>
 								</div>
 								<div>
 									<span>{'·  Internal Developer Portal development'}</span>
 								</div>
 								<div>
 									<span>{'·  Git Providers integrations: '}</span>
-									<span className='semi-bold'>{'Azure DevOps '}</span>
+									<span>{'Azure DevOps '}</span>
 									<img src={Azure} alt='azure' style={{ height: 12, marginBottom: 2 }} />
-									<span className='semi-bold'>{' · Bitbucket '}</span>
+									<span>{' · Bitbucket '}</span>
 									<img src={Bitbucket} alt='bitbucket' style={{ height: 12, marginBottom: 2 }} />
 								</div>
-							</div>
+							</Card>
 						</Column>
 					}
 				/>
@@ -162,10 +160,14 @@ const Experience = () => (
 					}
 				/>
 			</Timeline>
-			<img src={Gptw} alt='gptw' style={{ position: 'absolute', top: 150, left: 50, height: 60, borderRadius: 4 }} />
-			<img src={Gartner} alt='gartner' style={{ position: 'absolute', top: 150, left: 120, height: 60, borderRadius: 4 }} />
+			<div style={{ position: 'absolute', top: 205, right: 40, opacity: 0.95 }} >
+				<Row gap={16}>
+					<img src={Gptw} alt='gptw' style={{ height: 72, borderRadius: 4 }} />
+					<img src={Gartner} alt='gartner' style={{ height: 72, borderRadius: 4 }} />
+				</Row>
+			</div>
 		</Card>
-		<Row gap={12}>
+		<Row gap={'1em'}>
 			<Card
 				className='secondary gophing'
 				title={{
@@ -173,9 +175,10 @@ const Experience = () => (
 					icon: <img src={HashCode} alt='hash-code' />
 				}}
 			>
-				<Column>
+				<Column gap={8}>
 					<span>{'99th position @'}</span>
 					<span>{'Google Hash-Code 2022'}</span>
+					<span style={{ position: 'absolute', right: 24, bottom: 16, color: 'grey' }}>{'3360259 pts'}</span>
 				</Column>
 			</Card>
 			<Card
@@ -183,21 +186,22 @@ const Experience = () => (
 				title={{
 					text: 'Helmate',
 					icon: <img src={Honda} alt='prototyping' />,
-					badge: [
-						<Badge className={'helmate'} key={0}>{'Linux'}</Badge>,
-						<Badge className={'helmate'} key={1}>{'PocketSphinx'}</Badge>,
-						<Badge className={'helmate'} key={2}>{'Bluez'}</Badge>
-					]
+					badge: <Row gap={8} style={{ paddingLeft: 8 }}>
+						<Badge className={'helmate'}>{'Linux'}</Badge>
+						<Badge className={'helmate'}>{'PocketSphinx'}</Badge>
+						<Badge className={'helmate'}>{'Bluez'}</Badge>
+					</Row>
 				}}
+				// subtitle='Prototype Development for Honda Motor'
 				extra='May 2018'
 			>
-				<Column>
-					<Row gap={8}>
+				<Column gap={8}>
+					<Row gap={16}>
 						<span>{'Prototype Development for Honda Motor'}</span>
 						<span>{'·'}</span>
 						<span>{'Wearable object design'}</span>
 					</Row>
-					<Row gap={8}>
+					<Row gap={16}>
 						<span>{'Bone conduction speakers and laryngophone integration'}</span>
 						<span>{'·'}</span>
 						<span>{'Hands-free voice control'}</span>

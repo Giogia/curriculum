@@ -12,7 +12,9 @@
 
     z-index: 10;
 
+    /* border: 1px solid whitesmoke; */
+
     border-radius: 50%;
     background-color: aliceblue;
-    box-shadow: rgba(99, 99, 99, 0.1) 0px 2px 8px 0px;  
+    box-shadow: rgba(99, 99, 99, 0.5) 0px 2px 8px 0px;  
 }

@@ -1,9 +1,8 @@
-.projects .card-title .title-text {
-  font-size: medium;
-  padding-left: 8px;
+.projects .card-content {
+  gap: 2em;
 }
 
 .project .card-content .badge {
-  background: rgba(196, 189, 189, 0.254);
+  background: rgba(229, 228, 228);
   align-self: flex-end;
 }

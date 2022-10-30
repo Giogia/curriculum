@@ -4,7 +4,7 @@
     align-items: center;
     justify-content: flex-start;
 
-    gap: 8px;
+    gap: 0.5rem;
 
     border-radius: 8px;
 
@@ -70,6 +70,8 @@
     font-family: monospace;
     font-size: small;
     font-weight: 300;
+
+    color: grey;
 }
 
 .card-content {
@@ -79,8 +81,6 @@
 
     height: fit-content;
     width: 100%;
-
-    gap: 8px;
 
     border-radius: 8px;
     padding: 0.1rem;

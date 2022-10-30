@@ -27,10 +27,10 @@ const Research = () => (
 			<span>{'reconstructing novel viewpoints of realistic tridimensional scenes filmed with multiple depth cameras.'}</span>
 			<Row gap={8}>
 				<Badge >{'Variational Autoencoder'}</Badge>
-				<Badge 
+				<Badge
 					logo={<img src={Pytorch} alt='pytorch' style={{ height: 16 }} />}
 				>{'Pytorch'}</Badge>
-				<Badge 
+				<Badge
 					logo={<img src={Blender} alt='blender' style={{ height: 16 }} />}
 				>{'Blender'}</Badge>
 			</Row>
@@ -66,15 +66,24 @@ const Research = () => (
 				}}
 				extra='Sept 2019'
 			>
-				<Row>
+				<Column gap={16}>
 					<Column gap={8}>
-						<span>{'Room layout and corners estimation · Depth map estimation · Mesh extrusion · Image decomposition into perspective views'}</span>
 						<Row gap={8}>
-							<Badge>{'LayoutNet'}</Badge>
-							<Badge>{'Numpy-stl'}</Badge>
+							<span>{'Room layout and corners estimation'}</span>
+							<span>{' · '}</span>
+							<span>{'Depth map estimation'}</span>
+						</Row>
+						<Row gap={8}>
+							<span>{'Mesh extrusion'}</span>
+							<span>{' · '}</span>
+							<span>{'Image decomposition into perspective views'}</span>
 						</Row>
 					</Column>
-				</Row>
+					<Row gap={8}>
+						<Badge>{'LayoutNet'}</Badge>
+						<Badge>{'Numpy-stl'}</Badge>
+					</Row>
+				</Column>
 			</Card>
 			<Card
 				className='tertiary project'

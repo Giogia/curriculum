@@ -11,5 +11,9 @@
 }
 
 .paragraph-title {
-    min-width: 0%;
+    min-width: 12rem;
+}
+
+.paragraph-content {
+    width: 100%;
 }

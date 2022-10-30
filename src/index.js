@@ -27,8 +27,10 @@ root.render(
 			<Card className='main'>
 				<Contacts />
 				<Experience />
-				<Row gap={12}>
-					<Research />
+				<Row>
+					<Column gap={12}>
+						<Research />
+					</Column>
 					<Column gap={26}>
 						<Education />
 						<Publications />
