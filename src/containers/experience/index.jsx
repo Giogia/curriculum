@@ -207,7 +207,7 @@ const Experience = () => (
 			>
 				<Column gap={8}>
 					<Row gap={16}>
-						<span>{'Prototype Development for Honda Motor'}</span>
+						<span>{'Prototype development for Honda Motor'}</span>
 						<span>{'·'}</span>
 						<span>{'Wearable object design'}</span>
 					</Row>
