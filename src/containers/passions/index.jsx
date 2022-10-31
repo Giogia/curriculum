@@ -14,7 +14,7 @@ import './index.css'
 
 const Passions = () => (
 	<Card className='primary passions' title={{ text: 'Passions' }}>
-		<Card className='secondary' style={{padding: '8px 16px'}}>
+		<Card className='secondary' style={{padding: '8px 16px', width: 'fit-content'}}>
 			<Row gap={16}>
 				<span>{'Android Custom ROMs'}</span>
 				<img src={Android} alt='android' style={{ height: 14 }} />

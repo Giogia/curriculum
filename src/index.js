@@ -3,21 +3,21 @@ import ReactDOM from 'react-dom/client'
 
 import Icon from './assets/icon.jpg'
 
-import Contacts from './containers/contacts'
+import Avatar from './containers/avatar'
 import Details from './containers/details'
-import Education from './containers/education'
+import Contacts from './containers/contacts'
 import Experience from './containers/experience'
+import Education from './containers/education'
 import Projects from './containers/projects'
 import Publications from './containers/publications'
 import Thesis from './containers/thesis'
 import Passions from './containers/passions'
 
-import Avatar from './components/avatar'
 import Card from './components/card'
+import Grid from './components/grid'
 
 import './index.css'
 import 'antd/dist/antd.css'
-import Grid from './components/grid'
 
 const root = ReactDOM.createRoot(document.getElementById('root'))
 

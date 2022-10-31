@@ -7,15 +7,11 @@
 }
 
 .details .name .title-text {
-  /* color:whitesmoke; */
-
   font-weight: 600;
   font-size: x-large;
 }
 
-.details .job {
-  /* color: whitesmoke; */
-  
+.details .job {  
   font-size: medium;
   padding-left: 8px;
 }
