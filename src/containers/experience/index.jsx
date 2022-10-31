@@ -78,12 +78,12 @@ const Experience = () => (
 										<span>{'Figma'}</span>
 										<img src={Figma} alt='figma' style={{ height: 14 }} />
 									</Row>
-									<div>{'Owner of the official documentation releases'}</div>
+									<div>{'Releasing new versions of the official documentation'}</div>
 								</Card>
 								<Card className='tertiary' style={{ gridColumn: '1/4' }}>
 									<b>{'Projects:'}</b>
 									<Row gap={6}>
-										<span>{'Modular backoffice creation:'}</span>
+										<span>{'Modular Backoffice Creation:'}</span>
 										<span>{'Microlc'}</span>
 										<img src={MicroLc} alt='microlc' style={{ height: 14 }} />
 										<span>{' · '}</span>
@@ -95,9 +95,9 @@ const Experience = () => (
 										<span>{' · '}</span>
 										<span>{'Microfrontend'}</span>
 									</Row>
-									<span>{'Internal Developer Portal development'}</span>
+									<span>{'Internal Developer Portal Development'}</span>
 									<Row gap={6}>
-										<span>{'Git Providers integrations:'}</span>
+										<span>{'Git Providers Integrations:'}</span>
 										<span>{'Azure DevOps'}</span>
 										<img src={Azure} alt='azure' style={{ height: 14 }} />
 										<span>{' · '}</span>

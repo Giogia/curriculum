@@ -107,7 +107,7 @@ const Projects = () => (
 					extra='July 2017'
 					style={{ gridColumn: '6/10' }}
 				>
-					{'Videogame transposition of a board game using JavaFx'}
+					{'Videogame transposition of a board game using Swing'}
 					<Row gap={8}>
 						<Badge>{'Cranio Creations'}</Badge>
 						<Badge logo={<img src={Java} alt='java' style={{ height: 16 }} />}>
